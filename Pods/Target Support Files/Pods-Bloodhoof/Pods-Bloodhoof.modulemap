@@ -1,0 +1,6 @@
+framework module Pods_Bloodhoof {
+  umbrella header "Pods-Bloodhoof-umbrella.h"
+
+  export *
+  module * { export * }
+}
