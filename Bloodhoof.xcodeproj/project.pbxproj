@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0BF0FC5E08EF294CB2A526B3 /* Pods_Bloodhoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE2197039514B9ABAF68B0 /* Pods_Bloodhoof.framework */; };
-		9277570C1F22C9B800A3AF56 /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570B1F22C9B800A3AF56 /* Sets.swift */; };
+		9277570C1F22C9B800A3AF56 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570B1F22C9B800A3AF56 /* Set.swift */; };
 		D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344551EFF78BE001939A7 /* AppDelegate.swift */; };
-		D37344581EFF78BE001939A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344571EFF78BE001939A7 /* ViewController.swift */; };
+		D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344571EFF78BE001939A7 /* DashboardVC.swift */; };
 		D373445B1EFF78BE001939A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37344591EFF78BE001939A7 /* Main.storyboard */; };
 		D373445E1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D373445C1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld */; };
 		D37344601EFF78BE001939A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D373445F1EFF78BE001939A7 /* Assets.xcassets */; };
 		D37344631EFF78BE001939A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37344611EFF78BE001939A7 /* LaunchScreen.storyboard */; };
 		D373446E1EFF78BE001939A7 /* BloodhoofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D373446D1EFF78BE001939A7 /* BloodhoofTests.swift */; };
 		D37344791EFF78BE001939A7 /* BloodhoofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344781EFF78BE001939A7 /* BloodhoofUITests.swift */; };
+		D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3995F1F239AEE0079F6E5 /* Exercise.swift */; };
+		D3A399631F239C010079F6E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399621F239C010079F6E5 /* Constants.swift */; };
+		D3A399651F24C0030079F6E5 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399641F24C0030079F6E5 /* Body.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +42,11 @@
 /* Begin PBXFileReference section */
 		0BEE2197039514B9ABAF68B0 /* Pods_Bloodhoof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bloodhoof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2765270A4C5814A0186B69 /* Pods-Bloodhoof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.release.xcconfig"; sourceTree = "<group>"; };
-		9277570B1F22C9B800A3AF56 /* Sets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sets.swift; path = Models/Sets.swift; sourceTree = "<group>"; };
+		9277570B1F22C9B800A3AF56 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Set.swift; path = Models/Set.swift; sourceTree = "<group>"; };
 		B830F5E203AF09D3D6AC72B4 /* Pods-Bloodhoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.debug.xcconfig"; sourceTree = "<group>"; };
 		D37344521EFF78BE001939A7 /* Bloodhoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloodhoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37344551EFF78BE001939A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D37344571EFF78BE001939A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D37344571EFF78BE001939A7 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		D373445A1EFF78BE001939A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D373445D1EFF78BE001939A7 /* Bloodhoof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bloodhoof.xcdatamodel; sourceTree = "<group>"; };
 		D373445F1EFF78BE001939A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		D37344741EFF78BE001939A7 /* BloodhoofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodhoofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37344781EFF78BE001939A7 /* BloodhoofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodhoofUITests.swift; sourceTree = "<group>"; };
 		D373447A1EFF78BE001939A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A3995F1F239AEE0079F6E5 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = Models/Exercise.swift; sourceTree = "<group>"; };
+		D3A399621F239C010079F6E5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utilities/Constants.swift; sourceTree = "<group>"; };
+		D3A399641F24C0030079F6E5 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Body.swift; path = Models/Body.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		927757091F226C5000A3AF56 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				D37344571EFF78BE001939A7 /* DashboardVC.swift */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -101,7 +108,9 @@
 		9277570A1F22C98400A3AF56 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9277570B1F22C9B800A3AF56 /* Sets.swift */,
+				D3A399641F24C0030079F6E5 /* Body.swift */,
+				D3A3995F1F239AEE0079F6E5 /* Exercise.swift */,
+				9277570B1F22C9B800A3AF56 /* Set.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -131,15 +140,15 @@
 		D37344541EFF78BE001939A7 /* Bloodhoof */ = {
 			isa = PBXGroup;
 			children = (
-				9277570A1F22C98400A3AF56 /* Models */,
-				927757091F226C5000A3AF56 /* Dashboard */,
 				D37344551EFF78BE001939A7 /* AppDelegate.swift */,
-				D37344571EFF78BE001939A7 /* ViewController.swift */,
-				D37344591EFF78BE001939A7 /* Main.storyboard */,
 				D373445F1EFF78BE001939A7 /* Assets.xcassets */,
 				D37344611EFF78BE001939A7 /* LaunchScreen.storyboard */,
 				D37344641EFF78BE001939A7 /* Info.plist */,
 				D373445C1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld */,
+				D3A399611F239BDC0079F6E5 /* Utilities */,
+				D3A399671F24ED540079F6E5 /* views */,
+				9277570A1F22C98400A3AF56 /* Models */,
+				D3A399661F24EB160079F6E5 /* ViewModels */,
 			);
 			path = Bloodhoof;
 			sourceTree = "<group>";
@@ -160,6 +169,30 @@
 				D373447A1EFF78BE001939A7 /* Info.plist */,
 			);
 			path = BloodhoofUITests;
+			sourceTree = "<group>";
+		};
+		D3A399611F239BDC0079F6E5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D3A399621F239C010079F6E5 /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		D3A399661F24EB160079F6E5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		D3A399671F24ED540079F6E5 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D37344591EFF78BE001939A7 /* Main.storyboard */,
+				927757091F226C5000A3AF56 /* Dashboard */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		ED37EE593A6C752FD7A5A6CA /* Pods */ = {
@@ -357,10 +390,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9277570C1F22C9B800A3AF56 /* Sets.swift in Sources */,
-				D37344581EFF78BE001939A7 /* ViewController.swift in Sources */,
+				D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */,
+				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
+				9277570C1F22C9B800A3AF56 /* Set.swift in Sources */,
+				D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */,
 				D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */,
 				D373445E1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld in Sources */,
+				D3A399631F239C010079F6E5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
