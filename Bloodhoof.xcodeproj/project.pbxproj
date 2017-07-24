@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BF0FC5E08EF294CB2A526B3 /* Pods_Bloodhoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE2197039514B9ABAF68B0 /* Pods_Bloodhoof.framework */; };
 		9277570C1F22C9B800A3AF56 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570B1F22C9B800A3AF56 /* Set.swift */; };
+		D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34694CD1F256B8000921A7D /* DashboardVM.swift */; };
 		D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344551EFF78BE001939A7 /* AppDelegate.swift */; };
 		D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344571EFF78BE001939A7 /* DashboardVC.swift */; };
 		D373445B1EFF78BE001939A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37344591EFF78BE001939A7 /* Main.storyboard */; };
@@ -44,9 +45,10 @@
 		4A2765270A4C5814A0186B69 /* Pods-Bloodhoof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.release.xcconfig"; sourceTree = "<group>"; };
 		9277570B1F22C9B800A3AF56 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Set.swift; path = Models/Set.swift; sourceTree = "<group>"; };
 		B830F5E203AF09D3D6AC72B4 /* Pods-Bloodhoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.debug.xcconfig"; sourceTree = "<group>"; };
+		D34694CD1F256B8000921A7D /* DashboardVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardVM.swift; path = ViewModels/DashboardVM.swift; sourceTree = "<group>"; };
 		D37344521EFF78BE001939A7 /* Bloodhoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloodhoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37344551EFF78BE001939A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D37344571EFF78BE001939A7 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		D37344571EFF78BE001939A7 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardVC.swift; path = Views/DashboardVC/DashboardVC.swift; sourceTree = "<group>"; };
 		D373445A1EFF78BE001939A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D373445D1EFF78BE001939A7 /* Bloodhoof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bloodhoof.xcdatamodel; sourceTree = "<group>"; };
 		D373445F1EFF78BE001939A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		D3A399661F24EB160079F6E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D34694CD1F256B8000921A7D /* DashboardVM.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */,
 				D373445E1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld in Sources */,
 				D3A399631F239C010079F6E5 /* Constants.swift in Sources */,
+				D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
