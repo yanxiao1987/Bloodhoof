@@ -21,6 +21,7 @@
 		D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3995F1F239AEE0079F6E5 /* Exercise.swift */; };
 		D3A399631F239C010079F6E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399621F239C010079F6E5 /* Constants.swift */; };
 		D3A399651F24C0030079F6E5 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399641F24C0030079F6E5 /* Body.swift */; };
+		D3A3996A1F261F5E0079F6E5 /* NewPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399691F261F5E0079F6E5 /* NewPracticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D3A3995F1F239AEE0079F6E5 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = Models/Exercise.swift; sourceTree = "<group>"; };
 		D3A399621F239C010079F6E5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utilities/Constants.swift; sourceTree = "<group>"; };
 		D3A399641F24C0030079F6E5 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Body.swift; path = Models/Body.swift; sourceTree = "<group>"; };
+		D3A399691F261F5E0079F6E5 /* NewPracticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewPracticeVC.swift; path = Views/NewPractice/NewPracticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +196,17 @@
 			children = (
 				D37344591EFF78BE001939A7 /* Main.storyboard */,
 				927757091F226C5000A3AF56 /* Dashboard */,
+				D3A399681F261D600079F6E5 /* New */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		D3A399681F261D600079F6E5 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				D3A399691F261F5E0079F6E5 /* NewPracticeVC.swift */,
+			);
+			name = New;
 			sourceTree = "<group>";
 		};
 		ED37EE593A6C752FD7A5A6CA /* Pods */ = {
@@ -394,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */,
+				D3A3996A1F261F5E0079F6E5 /* NewPracticeVC.swift in Sources */,
 				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
 				9277570C1F22C9B800A3AF56 /* Set.swift in Sources */,
 				D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */,
