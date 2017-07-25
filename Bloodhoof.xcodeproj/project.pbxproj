@@ -10,6 +10,7 @@
 		0BF0FC5E08EF294CB2A526B3 /* Pods_Bloodhoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE2197039514B9ABAF68B0 /* Pods_Bloodhoof.framework */; };
 		9277570C1F22C9B800A3AF56 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570B1F22C9B800A3AF56 /* Set.swift */; };
 		9277570E1F26696100A3AF56 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570D1F26696100A3AF56 /* HeaderView.swift */; };
+		9277571A1F280D5A00A3AF56 /* ProfileMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927757191F280D5A00A3AF56 /* ProfileMainVC.swift */; };
 		D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34694CD1F256B8000921A7D /* DashboardVM.swift */; };
 		D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344551EFF78BE001939A7 /* AppDelegate.swift */; };
 		D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344571EFF78BE001939A7 /* DashboardVC.swift */; };
@@ -47,11 +48,12 @@
 		4A2765270A4C5814A0186B69 /* Pods-Bloodhoof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.release.xcconfig"; sourceTree = "<group>"; };
 		9277570B1F22C9B800A3AF56 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Set.swift; path = Models/Set.swift; sourceTree = "<group>"; };
 		9277570D1F26696100A3AF56 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Views/HeaderView.swift; sourceTree = "<group>"; };
+		927757191F280D5A00A3AF56 /* ProfileMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileMainVC.swift; path = Views/Profile/ProfileMainVC.swift; sourceTree = "<group>"; };
 		B830F5E203AF09D3D6AC72B4 /* Pods-Bloodhoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.debug.xcconfig"; sourceTree = "<group>"; };
 		D34694CD1F256B8000921A7D /* DashboardVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardVM.swift; path = ViewModels/DashboardVM.swift; sourceTree = "<group>"; };
 		D37344521EFF78BE001939A7 /* Bloodhoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloodhoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37344551EFF78BE001939A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D37344571EFF78BE001939A7 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardVC.swift; path = Views/DashboardVC/DashboardVC.swift; sourceTree = "<group>"; };
+		D37344571EFF78BE001939A7 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardVC.swift; path = Views/Dashboard/DashboardVC.swift; sourceTree = "<group>"; };
 		D373445A1EFF78BE001939A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D373445D1EFF78BE001939A7 /* Bloodhoof.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bloodhoof.xcdatamodel; sourceTree = "<group>"; };
 		D373445F1EFF78BE001939A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 				9277570B1F22C9B800A3AF56 /* Set.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		927757181F280CCD00A3AF56 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				927757191F280D5A00A3AF56 /* ProfileMainVC.swift */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 		D37344491EFF78BE001939A7 = {
@@ -199,17 +209,18 @@
 				D37344591EFF78BE001939A7 /* Main.storyboard */,
 				9277570D1F26696100A3AF56 /* HeaderView.swift */,
 				927757091F226C5000A3AF56 /* Dashboard */,
-				D3A399681F261D600079F6E5 /* New */,
+				D3A399681F261D600079F6E5 /* New Workout */,
+				927757181F280CCD00A3AF56 /* Profile */,
 			);
 			name = views;
 			sourceTree = "<group>";
 		};
-		D3A399681F261D600079F6E5 /* New */ = {
+		D3A399681F261D600079F6E5 /* New Workout */ = {
 			isa = PBXGroup;
 			children = (
 				D3A399691F261F5E0079F6E5 /* NewPracticeVC.swift */,
 			);
-			name = New;
+			name = "New Workout";
 			sourceTree = "<group>";
 		};
 		ED37EE593A6C752FD7A5A6CA /* Pods */ = {
@@ -409,6 +420,7 @@
 			files = (
 				D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */,
 				D3A3996A1F261F5E0079F6E5 /* NewPracticeVC.swift in Sources */,
+				9277571A1F280D5A00A3AF56 /* ProfileMainVC.swift in Sources */,
 				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
 				9277570C1F22C9B800A3AF56 /* Set.swift in Sources */,
 				D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */,

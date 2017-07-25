@@ -23,6 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         device_width = UIScreen.main.bounds.size.width
         device_height = UIScreen.main.bounds.size.height
+        
+        //setting up navigation bar appearance
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.white,
+            NSFontAttributeName: UIFont(name: "Avenir-Book", size: 17)!
+        ]
+        
         return true
     }
 
