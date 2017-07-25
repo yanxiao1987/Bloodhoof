@@ -12,11 +12,15 @@ class DashboardVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        topViewInit()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    //MARK: UI Inits
+    private func topViewInit() {
+        let topView = UIView(frame: CGRect(x: 0, y: 0, width: device_width, height: 70))
+        topView.backgroundColor = Constants.Colors.blue
+        self.view.addSubview(topView)
+        
         
     }
     

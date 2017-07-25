@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+var device_width: CGFloat = 0
+var device_height: CGFloat = 0
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UIApplication.shared.statusBarStyle = .lightContent
+        device_width = UIScreen.main.bounds.size.width
+        device_height = UIScreen.main.bounds.size.height
         return true
     }
 
