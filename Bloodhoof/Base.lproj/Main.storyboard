@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="-484" y="-67"/>
         </scene>
-        <!--New PracticeVC-->
+        <!--New WorkoutVC-->
         <scene sceneID="G0M-dg-1iz">
             <objects>
-                <viewController id="Hsx-tR-okI" customClass="NewPracticeVC" customModule="Bloodhoof" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hsx-tR-okI" customClass="NewWorkoutVC" customModule="Bloodhoof" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="azT-4E-UwV"/>
                         <viewControllerLayoutGuide type="bottom" id="Eyx-zM-VVX"/>
