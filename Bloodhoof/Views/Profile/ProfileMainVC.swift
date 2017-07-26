@@ -16,7 +16,6 @@ class ProfileMainVC: UIViewController {
     }
     
     func navigationBarInit() {
-        navigationController?.navigationBar.barTintColor = Constants.Colors.teal_blue
         navigationItem.title = NSLocalizedString("Profile", comment: "")
         
 //        //navi left button

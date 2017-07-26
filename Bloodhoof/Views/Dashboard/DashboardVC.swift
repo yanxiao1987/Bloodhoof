@@ -16,7 +16,6 @@ class DashboardVC: UIViewController {
     }
 
     func navigationBarInit() {
-        navigationController?.navigationBar.barTintColor = Constants.Colors.blue
         navigationItem.title = NSLocalizedString("Records", comment: "")
         
 //        //navi left button

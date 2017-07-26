@@ -11,6 +11,8 @@ import CoreData
 
 var device_width: CGFloat = 0
 var device_height: CGFloat = 0
+var navi_height: CGFloat = 64
+var tabbar_height: CGFloat = 60
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,6 +31,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSForegroundColorAttributeName: UIColor.white,
             NSFontAttributeName: UIFont(name: "Avenir-Book", size: 17)!
         ]
+        let appearance = UIBarButtonItem.appearance()
+        appearance.setTitleTextAttributes(
+            [ NSForegroundColorAttributeName: UIColor.white,
+              NSFontAttributeName: UIFont.systemFont(ofSize: 17),
+              ],
+            for: UIControlState()
+        )
+        UINavigationBar.appearance().barTintColor = Constants.Colors.gray
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().alpha = 0.0
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().tintColor = UIColor.white
+        //setting up tabbar appearance, the selected and unselected item base color
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.gray], for: UIControlState())
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: Constants.Colors.gray], for: .selected)
         
         return true
     }

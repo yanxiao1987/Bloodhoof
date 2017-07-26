@@ -13,7 +13,7 @@ class NewWorkoutVC: UIViewController {
     var topView: UIView!
     var startNewView: UIView!
     var bodyPartsView: UIView!
-    var bodyPartsViewTopConstraint: NSLayoutConstraint
+    var bodyPartsViewTopConstraint: NSLayoutConstraint!
     
     var viewModel = NewWorkoutVM()
     
@@ -21,14 +21,11 @@ class NewWorkoutVC: UIViewController {
         super.viewDidLoad()
         navigationBarInit()
         startNewViewInit()
-        bodyPartsViewInit()
     }
     
     //MARK: UI Inits
     func navigationBarInit() {
-        navigationController?.navigationBar.barTintColor = Constants.Colors.orange
         navigationItem.title = NSLocalizedString("Today", comment: "")
-        
 //        //navi left button
 //        let img = UIImage(named: "menu")!.imageWithColor(UIColor.white)
 //        menuButton = UIButton(type: .custom);
@@ -49,6 +46,10 @@ class NewWorkoutVC: UIViewController {
 //        navigationItem.rightBarButtonItem = naviRightButton
     }
     
+    func tabBarInit() {
+        
+    }
+    
     //If no workout today, display this view
     private func startNewViewInit() {
         startNewView = UIView()
@@ -65,10 +66,10 @@ class NewWorkoutVC: UIViewController {
         //button click to create new workout for today
         let createNewButton = UIButton()
         createNewButton.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
-        createNewButton.setTitleColor(Constants.Colors.orange, for: UIControlState())
+        createNewButton.setTitleColor(Constants.Colors.gray, for: UIControlState())
         createNewButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 23)
         createNewButton.layer.cornerRadius = 5
-        createNewButton.layer.borderColor = Constants.Colors.orange.cgColor
+        createNewButton.layer.borderColor = Constants.Colors.gray.cgColor
         createNewButton.layer.borderWidth = 1
         createNewButton.addTarget(self, action: #selector(self.createNewButtonClicked), for: UIControlEvents.touchUpInside)
         createNewButton.translatesAutoresizingMaskIntoConstraints = false
@@ -95,17 +96,18 @@ class NewWorkoutVC: UIViewController {
     private func bodyPartsViewInit() {
         bodyPartsView = UIView()
         bodyPartsView.translatesAutoresizingMaskIntoConstraints = false
+        bodyPartsView.backgroundColor = UIColor.red
         self.view.addSubview(bodyPartsView)
         
-        bodyPartsViewTopConstraint = bodyPartsView.topAnchor
-        bodyPartsViewTopConstraint.constraint(equalTo: self.view.topAnchor, constant: device_height).isActive = true
-        startNewView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
-        startNewView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
-        startNewView.heightAnchor.constraint(equalToConstant: device_height-184).isActive = true
+        bodyPartsViewTopConstraint = bodyPartsView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: device_height)
+        bodyPartsViewTopConstraint.isActive = true
+        bodyPartsView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
+        bodyPartsView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
+        bodyPartsView.heightAnchor.constraint(equalToConstant: device_height-184).isActive = true
     }
     
     //MARK: - Button action
     func createNewButtonClicked() {
-        bodyPartsViewTopConstrant.constant = 30
+        self.performSegue(withIdentifier: "workoutTypeSegue", sender: nil)
     }
 }
