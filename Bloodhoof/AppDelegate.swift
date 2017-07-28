@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //setting up navigation bar appearance
         UINavigationBar.appearance().titleTextAttributes = [
             NSForegroundColorAttributeName: UIColor.white,
-            NSFontAttributeName: UIFont(name: "Avenir-Book", size: 17)!
+//            NSFontAttributeName: UIFont(name: "Avenir-Book", size: 17)!
         ]
         let appearance = UIBarButtonItem.appearance()
         appearance.setTitleTextAttributes(
@@ -38,15 +38,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               ],
             for: UIControlState()
         )
-        UINavigationBar.appearance().barTintColor = Constants.Colors.gray
+        UINavigationBar.appearance().barTintColor = Constants.Colors.darkGray
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().alpha = 0.0
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().tintColor = UIColor.white
         //setting up tabbar appearance, the selected and unselected item base color
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.gray], for: UIControlState())
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: Constants.Colors.gray], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: Constants.Colors.gray], for: UIControlState())
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -4)
         
         return true
     }

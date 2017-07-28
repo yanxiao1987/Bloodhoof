@@ -56,7 +56,8 @@ class NewWorkoutVC: UIViewController {
         startNewView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(startNewView)
         
-        let reminderLabel = UILabel(frame: CGRect(x: 0, y: 0, width: device_width-60, height: 150))
+        let reminderLabel = UILabel()
+        reminderLabel.translatesAutoresizingMaskIntoConstraints = false
         reminderLabel.textAlignment = .center
         reminderLabel.textColor = Constants.Colors.gray
         reminderLabel.numberOfLines = 0
@@ -66,20 +67,19 @@ class NewWorkoutVC: UIViewController {
         //button click to create new workout for today
         let createNewButton = UIButton()
         createNewButton.setTitle(NSLocalizedString("Start", comment: ""), for: .normal)
-        createNewButton.setTitleColor(Constants.Colors.gray, for: UIControlState())
+        createNewButton.setTitleColor(Constants.Colors.darkGray, for: UIControlState())
         createNewButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 23)
         createNewButton.layer.cornerRadius = 5
-        createNewButton.layer.borderColor = Constants.Colors.gray.cgColor
+        createNewButton.layer.borderColor = Constants.Colors.darkGray.cgColor
         createNewButton.layer.borderWidth = 1
         createNewButton.addTarget(self, action: #selector(self.createNewButtonClicked), for: UIControlEvents.touchUpInside)
         createNewButton.translatesAutoresizingMaskIntoConstraints = false
         startNewView.addSubview(createNewButton)
         
-        startNewView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: device_height*0.5-150).isActive = true
+        startNewView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0).isActive = true
         startNewView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
         startNewView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
-        startNewView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
-        startNewView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        startNewView.heightAnchor.constraint(equalToConstant: device_height/2).isActive = true
 
         reminderLabel.topAnchor.constraint(equalTo: startNewView.topAnchor, constant: 0).isActive = true
         reminderLabel.leadingAnchor.constraint(equalTo: startNewView.leadingAnchor, constant: 20).isActive = true
@@ -90,20 +90,6 @@ class NewWorkoutVC: UIViewController {
         createNewButton.centerXAnchor.constraint(equalTo: startNewView.centerXAnchor, constant: 0).isActive = true
         createNewButton.widthAnchor.constraint(equalTo: startNewView.widthAnchor, multiplier: 0.6, constant: 0).isActive = true
         createNewButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    }
-    
-    //After user click 'Start' button, popup this view for body parts choosing
-    private func bodyPartsViewInit() {
-        bodyPartsView = UIView()
-        bodyPartsView.translatesAutoresizingMaskIntoConstraints = false
-        bodyPartsView.backgroundColor = UIColor.red
-        self.view.addSubview(bodyPartsView)
-        
-        bodyPartsViewTopConstraint = bodyPartsView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: device_height)
-        bodyPartsViewTopConstraint.isActive = true
-        bodyPartsView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 30).isActive = true
-        bodyPartsView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -30).isActive = true
-        bodyPartsView.heightAnchor.constraint(equalToConstant: device_height-184).isActive = true
     }
     
     //MARK: - Button action

@@ -11,7 +11,7 @@ import UIKit
 enum Body: String {
     case
     arm = "Arms",
-    back = "back",
+    back = "Back",
     cardio = "Cardio",
     chest = "Chest",
     core = "Core",

@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0BF0FC5E08EF294CB2A526B3 /* Pods_Bloodhoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BEE2197039514B9ABAF68B0 /* Pods_Bloodhoof.framework */; };
 		9277570C1F22C9B800A3AF56 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570B1F22C9B800A3AF56 /* Set.swift */; };
-		9277570E1F26696100A3AF56 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277570D1F26696100A3AF56 /* HeaderView.swift */; };
 		9277571A1F280D5A00A3AF56 /* ProfileMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927757191F280D5A00A3AF56 /* ProfileMainVC.swift */; };
 		9277571C1F29075D00A3AF56 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277571B1F29075D00A3AF56 /* MainTabBarController.swift */; };
 		9277571E1F29506C00A3AF56 /* WorkoutTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277571D1F29506C00A3AF56 /* WorkoutTypeVC.swift */; };
+		927757261F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927757251F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift */; };
 		D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34694CD1F256B8000921A7D /* DashboardVM.swift */; };
 		D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344551EFF78BE001939A7 /* AppDelegate.swift */; };
 		D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344571EFF78BE001939A7 /* DashboardVC.swift */; };
@@ -50,10 +50,10 @@
 		0BEE2197039514B9ABAF68B0 /* Pods_Bloodhoof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bloodhoof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2765270A4C5814A0186B69 /* Pods-Bloodhoof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.release.xcconfig"; sourceTree = "<group>"; };
 		9277570B1F22C9B800A3AF56 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Set.swift; path = Models/Set.swift; sourceTree = "<group>"; };
-		9277570D1F26696100A3AF56 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = Views/HeaderView.swift; sourceTree = "<group>"; };
 		927757191F280D5A00A3AF56 /* ProfileMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileMainVC.swift; path = Views/Profile/ProfileMainVC.swift; sourceTree = "<group>"; };
 		9277571B1F29075D00A3AF56 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Views/MainTabBarController.swift; sourceTree = "<group>"; };
 		9277571D1F29506C00A3AF56 /* WorkoutTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeVC.swift; path = Views/Today/WorkoutTypeVC.swift; sourceTree = "<group>"; };
+		927757251F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutPlanChoiceVC.swift; path = Views/Today/WorkoutPlanChoiceVC.swift; sourceTree = "<group>"; };
 		B830F5E203AF09D3D6AC72B4 /* Pods-Bloodhoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.debug.xcconfig"; sourceTree = "<group>"; };
 		D34694CD1F256B8000921A7D /* DashboardVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardVM.swift; path = ViewModels/Dashboard/DashboardVM.swift; sourceTree = "<group>"; };
 		D37344521EFF78BE001939A7 /* Bloodhoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloodhoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				D37344591EFF78BE001939A7 /* Main.storyboard */,
-				9277570D1F26696100A3AF56 /* HeaderView.swift */,
 				9277571B1F29075D00A3AF56 /* MainTabBarController.swift */,
 				D3A399681F261D600079F6E5 /* Today */,
 				927757091F226C5000A3AF56 /* Dashboard */,
@@ -228,6 +227,7 @@
 			children = (
 				D3A399691F261F5E0079F6E5 /* NewWorkoutVC.swift */,
 				9277571D1F29506C00A3AF56 /* WorkoutTypeVC.swift */,
+				927757251F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift */,
 			);
 			name = Today;
 			sourceTree = "<group>";
@@ -445,13 +445,13 @@
 			files = (
 				D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */,
 				D3A3996A1F261F5E0079F6E5 /* NewWorkoutVC.swift in Sources */,
+				927757261F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift in Sources */,
 				9277571A1F280D5A00A3AF56 /* ProfileMainVC.swift in Sources */,
 				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
 				9277571E1F29506C00A3AF56 /* WorkoutTypeVC.swift in Sources */,
 				9277570C1F22C9B800A3AF56 /* Set.swift in Sources */,
 				D3A399721F28CD2B0079F6E5 /* NewWorkoutVM.swift in Sources */,
 				D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */,
-				9277570E1F26696100A3AF56 /* HeaderView.swift in Sources */,
 				D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */,
 				D373445E1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld in Sources */,
 				D3A399631F239C010079F6E5 /* Constants.swift in Sources */,

@@ -19,8 +19,11 @@ struct Constants {
         static let teal_blue = UIColor(red: 90/255.0, green: 200/255.0, blue: 250/255.0, alpha: 1.0)
         static let purple = UIColor(red: 88/255.0, green: 86/255.0, blue: 214/255.0, alpha: 1.0)
         static let gray = UIColor(red: 209/255.0, green: 211/255.0, blue: 212/255.0, alpha: 1.0)
+        static let darkGray = UIColor(red: 90/255.0, green: 90/255.0, blue: 90/255.0, alpha: 1.0)
         static let pink = UIColor(red: 253/255.0, green: 137/255.0, blue: 137/255.0, alpha: 1.0)
     }
+    
+    static let bodyParts = ["Arms", "Back", "Cardio", "Chest", "Core", "Glutes", "Legs", "Shoulder"]
 }
 
 extension UIViewController {

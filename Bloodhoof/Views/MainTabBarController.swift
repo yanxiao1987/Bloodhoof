@@ -20,15 +20,15 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     override func viewDidLoad() {
-        UITabBar.appearance().tintColor = Constants.Colors.blue
+        UITabBar.appearance().tintColor = UIColor.white
         
         // Sets the default color of the background of the UITabBar
         //        UITabBar.appearance().barTintColor = UIColor(red: 245.0/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0)
-        UITabBar.appearance().barTintColor = UIColor.white
+        UITabBar.appearance().barTintColor = Constants.Colors.darkGray
         // Sets the background color of the selected UITabBarItem (using and plain colored UIImage with the width = 1/5 of the tabBar (if you have 5 items) and the height of the tabBar)
         for item in self.tabBar.items as [UITabBarItem]! {
             if let image = item.image {
-                item.image = image.imageWithColor(UIColor.gray).withRenderingMode(.alwaysOriginal)
+                item.image = image.imageWithColor(Constants.Colors.gray).withRenderingMode(.alwaysOriginal)
             }
         }
     }

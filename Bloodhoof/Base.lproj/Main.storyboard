@@ -101,16 +101,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="s01-4Y-fFi" kind="show" identifier="workoutPlanChoiceSegue" id="p9B-5d-Ynm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppH-7w-Kwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1961" y="-67"/>
         </scene>
+        <!--Workout Plan ChoiceVC-->
+        <scene sceneID="i3j-vH-bC6">
+            <objects>
+                <viewController id="s01-4Y-fFi" customClass="WorkoutPlanChoiceVC" customModule="Bloodhoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGg-Md-DrH"/>
+                        <viewControllerLayoutGuide type="bottom" id="BFA-Qb-26e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G8q-ng-R8g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQJ-u4-4KO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657" y="-67"/>
+        </scene>
         <!--Today-->
         <scene sceneID="yTd-ne-ula">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xK5-dB-DO0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" id="N87-Xd-xjq"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="me" selectedImage="me_filled" id="N87-Xd-xjq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mXd-G3-yl9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -148,7 +169,7 @@
         <scene sceneID="PT1-zI-DRZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="90l-if-BfH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Me" id="EV8-w4-LdL"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="me" selectedImage="me_filled" id="EV8-w4-LdL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DVY-B3-HGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -164,4 +185,8 @@
             <point key="canvasLocation" x="468" y="616"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="me" width="50" height="50"/>
+        <image name="me_filled" width="50" height="50"/>
+    </resources>
 </document>
