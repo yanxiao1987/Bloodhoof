@@ -171,7 +171,7 @@
         <scene sceneID="evs-y9-ZX0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RGR-6N-dFN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Records" image="records" selectedImage="records_filled" id="1Sf-Bk-qQ2"/>
+                    <tabBarItem key="tabBarItem" title="Records" image="records_30x30" selectedImage="records_filled_30x30" id="1Sf-Bk-qQ2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9oF-TI-j7f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -190,7 +190,7 @@
         <scene sceneID="PT1-zI-DRZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="90l-if-BfH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Me" image="me" selectedImage="me_filled" id="EV8-w4-LdL"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="me_30x30" selectedImage="me_filled_30x30" id="EV8-w4-LdL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DVY-B3-HGO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -209,9 +209,9 @@
     <resources>
         <image name="dumbbell_30x30" width="30" height="30"/>
         <image name="dumbbell_filled_30x30" width="30" height="30"/>
-        <image name="me" width="30" height="30"/>
-        <image name="me_filled" width="30" height="30"/>
-        <image name="records" width="30" height="30"/>
-        <image name="records_filled" width="30" height="30"/>
+        <image name="me_30x30" width="30" height="30"/>
+        <image name="me_filled_30x30" width="30" height="30"/>
+        <image name="records_30x30" width="30" height="30"/>
+        <image name="records_filled_30x30" width="30" height="30"/>
     </resources>
 </document>

@@ -111,17 +111,23 @@ extension LoginVC {
         viewModel.isValid
             .map{valid in
                 if valid {
-                    print("True")
                     self.loginButton.setTitleColor(Constants.Colors.darkGray, for: .normal)
                 } else {
-                    print("False")
                     self.loginButton.setTitleColor(Constants.Colors.gray, for: .normal)
                 }
                 return valid
             }
             .bindTo(loginButton.rx.isEnabled)
             .addDisposableTo(disposeBag)
+        
+        //do something when data in viewModel changed
+        viewModel.username.asObservable()
+            .subscribe(onNext: {
+                print($0)
+            })
+            .disposed(by: disposeBag)
     }
+    
 }
 
 //MARK: - User Interaction

@@ -10,6 +10,8 @@ import Foundation
 import RxSwift
 
 struct LoginVM {
+    let disposeBag = DisposeBag()
+    
     let username = Variable<String>("")
     let password = Variable<String>("")
     
@@ -19,11 +21,11 @@ struct LoginVM {
         }
     }
     
-    func validUsername(_ username: String) -> Bool {
+    private func validUsername(_ username: String) -> Bool {
         return username.characters.count > 0
     }
     
-    func validPassword(_ password: String) -> Bool {
+    private func validPassword(_ password: String) -> Bool {
         return password.characters.count > 0
     }
 }
