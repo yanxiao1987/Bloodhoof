@@ -27,6 +27,8 @@
 		D3A399651F24C0030079F6E5 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399641F24C0030079F6E5 /* Body.swift */; };
 		D3A3996A1F261F5E0079F6E5 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399691F261F5E0079F6E5 /* NewWorkoutVC.swift */; };
 		D3A399721F28CD2B0079F6E5 /* NewWorkoutVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399711F28CD2B0079F6E5 /* NewWorkoutVM.swift */; };
+		D3A399761F2CB7580079F6E5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399751F2CB7580079F6E5 /* LoginVC.swift */; };
+		D3A399781F2CB76F0079F6E5 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399771F2CB76F0079F6E5 /* LoginVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		D3A399641F24C0030079F6E5 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Body.swift; path = Models/Body.swift; sourceTree = "<group>"; };
 		D3A399691F261F5E0079F6E5 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewWorkoutVC.swift; path = Views/Today/NewWorkoutVC.swift; sourceTree = "<group>"; };
 		D3A399711F28CD2B0079F6E5 /* NewWorkoutVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewWorkoutVM.swift; path = ViewModels/Today/NewWorkoutVM.swift; sourceTree = "<group>"; };
+		D3A399751F2CB7580079F6E5 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Views/Login/LoginVC.swift; sourceTree = "<group>"; };
+		D3A399771F2CB76F0079F6E5 /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVM.swift; path = ViewModels/Login/LoginVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,8 +208,9 @@
 		D3A399661F24EB160079F6E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D3A3996F1F28CC790079F6E5 /* Dashboard */,
+				D3A399741F2CB6F70079F6E5 /* Login */,
 				D3A399701F28CC810079F6E5 /* Today */,
+				D3A3996F1F28CC790079F6E5 /* Dashboard */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			children = (
 				D37344591EFF78BE001939A7 /* Main.storyboard */,
 				9277571B1F29075D00A3AF56 /* MainTabBarController.swift */,
+				D3A399731F2CB6D00079F6E5 /* Login */,
 				D3A399681F261D600079F6E5 /* Today */,
 				927757091F226C5000A3AF56 /* Dashboard */,
 				927757181F280CCD00A3AF56 /* Profile */,
@@ -246,6 +252,22 @@
 				D3A399711F28CD2B0079F6E5 /* NewWorkoutVM.swift */,
 			);
 			name = Today;
+			sourceTree = "<group>";
+		};
+		D3A399731F2CB6D00079F6E5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D3A399751F2CB7580079F6E5 /* LoginVC.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		D3A399741F2CB6F70079F6E5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D3A399771F2CB76F0079F6E5 /* LoginVM.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		ED37EE593A6C752FD7A5A6CA /* Pods */ = {
@@ -447,6 +469,7 @@
 				D3A3996A1F261F5E0079F6E5 /* NewWorkoutVC.swift in Sources */,
 				927757261F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift in Sources */,
 				9277571A1F280D5A00A3AF56 /* ProfileMainVC.swift in Sources */,
+				D3A399781F2CB76F0079F6E5 /* LoginVM.swift in Sources */,
 				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
 				9277571E1F29506C00A3AF56 /* WorkoutTypeVC.swift in Sources */,
 				9277570C1F22C9B800A3AF56 /* Set.swift in Sources */,
@@ -457,6 +480,7 @@
 				D3A399631F239C010079F6E5 /* Constants.swift in Sources */,
 				D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */,
 				9277571C1F29075D00A3AF56 /* MainTabBarController.swift in Sources */,
+				D3A399761F2CB7580079F6E5 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +638,7 @@
 				DEVELOPMENT_TEAM = A48E89D852;
 				INFOPLIST_FILE = Bloodhoof/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xiao.Bloodhoof;
+				PRODUCT_BUNDLE_IDENTIFIER = xiao.GymNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -628,7 +652,7 @@
 				DEVELOPMENT_TEAM = A48E89D852;
 				INFOPLIST_FILE = Bloodhoof/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xiao.Bloodhoof;
+				PRODUCT_BUNDLE_IDENTIFIER = xiao.GymNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

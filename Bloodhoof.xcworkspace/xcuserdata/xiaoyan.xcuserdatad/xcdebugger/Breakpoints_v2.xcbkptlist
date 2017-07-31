@@ -19,5 +19,69 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bloodhoof/ViewModels/Login/LoginVM.swift"
+            timestampString = "523154136.100374"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "validUsername(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bloodhoof/ViewModels/Login/LoginVM.swift"
+            timestampString = "523154136.100374"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "isValid"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bloodhoof.LoginVM.isValid.getter : RxSwift.Observable&lt;Swift.Bool&gt;"
+                  moduleName = "Bloodhoof"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaoyan/Documents/Projects/Bloodhoof/Bloodhoof/ViewModels/Login/LoginVM.swift"
+                  timestampString = "523129838.500625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bloodhoof.LoginVM.(isValid.getter : RxSwift.Observable&lt;Swift.Bool&gt;).(closure #1)"
+                  moduleName = "Bloodhoof"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaoyan/Documents/Projects/Bloodhoof/Bloodhoof/ViewModels/Login/LoginVM.swift"
+                  timestampString = "523129838.502054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

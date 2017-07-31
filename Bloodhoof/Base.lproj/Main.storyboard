@@ -47,6 +47,27 @@
             </objects>
             <point key="canvasLocation" x="1265" y="-729"/>
         </scene>
+        <!--LoginVC-->
+        <scene sceneID="exT-aa-Jta">
+            <objects>
+                <viewController id="HpJ-RZ-eNP" customClass="LoginVC" customModule="Bloodhoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rm5-jf-NK8"/>
+                        <viewControllerLayoutGuide type="bottom" id="C54-jW-gch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CgX-ea-BzC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="dCS-sp-fID" kind="show" identifier="loginSuccessSegue" id="Xt7-qm-QTM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nQ-QD-JzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1222" y="-67"/>
+        </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="LAv-0T-4IW">
             <objects>
@@ -131,7 +152,7 @@
         <scene sceneID="yTd-ne-ula">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xK5-dB-DO0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" image="me" selectedImage="me_filled" id="N87-Xd-xjq"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="dumbbell_30x30" selectedImage="dumbbell_filled_30x30" id="N87-Xd-xjq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mXd-G3-yl9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -150,7 +171,7 @@
         <scene sceneID="evs-y9-ZX0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RGR-6N-dFN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Records" id="1Sf-Bk-qQ2"/>
+                    <tabBarItem key="tabBarItem" title="Records" image="records" selectedImage="records_filled" id="1Sf-Bk-qQ2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9oF-TI-j7f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -186,7 +207,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="me" width="50" height="50"/>
-        <image name="me_filled" width="50" height="50"/>
+        <image name="dumbbell_30x30" width="30" height="30"/>
+        <image name="dumbbell_filled_30x30" width="30" height="30"/>
+        <image name="me" width="30" height="30"/>
+        <image name="me_filled" width="30" height="30"/>
+        <image name="records" width="30" height="30"/>
+        <image name="records_filled" width="30" height="30"/>
     </resources>
 </document>
