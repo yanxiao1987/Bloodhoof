@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Exercise: NSObject {
+class ExerciseData: NSObject {
 
 }

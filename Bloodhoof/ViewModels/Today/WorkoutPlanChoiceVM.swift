@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 
-struct WorkoutPlanChoiceVM {
-    let planList = Variable<[Exercise]>([])
-    
+class WorkoutPlanChoiceVM: NSObject {
+
 }

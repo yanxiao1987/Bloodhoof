@@ -79,10 +79,10 @@ extension WorkoutTypeVC: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BodyPartsCollectionViewCell", for: indexPath) as! BodyPartsCollectionViewCell
         cell.nameLabel.text = Constants.bodyParts[indexPath.row]
         if checkedList[indexPath.row] {
-            cell.checkImageView.image = UIImage(named: "markdone_filled_30x30")
+            cell.checkImageView.image = UIImage(named: "markdone_filled_50x50")
             cell.mainView.layer.borderColor = Constants.Colors.green.cgColor
         } else {
-            cell.checkImageView.image = UIImage(named: "markdone_30x30")
+            cell.checkImageView.image = UIImage(named: "markdone_50x50")
             cell.mainView.layer.borderColor = Constants.Colors.gray.cgColor
         }
         return cell
