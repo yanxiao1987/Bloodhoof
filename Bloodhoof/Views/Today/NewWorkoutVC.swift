@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NewWorkoutVC: UIViewController {
 
@@ -21,6 +22,34 @@ class NewWorkoutVC: UIViewController {
         super.viewDidLoad()
         navigationBarInit()
         startNewViewInit()
+        
+//        guard let appDelegate =
+//            UIApplication.shared.delegate as? AppDelegate else {
+//                return
+//        }
+//        
+//        // 1
+//        let managedContext =
+//            appDelegate.persistentContainer.viewContext
+//        
+//        // 2
+//        let entity =
+//            NSEntityDescription.entity(forEntityName: "Workout",
+//                                       in: managedContext)!
+//        
+//        let person = NSManagedObject(entity: entity,
+//                                     insertInto: managedContext)
+//        
+//        // 3
+//        person.setValue("Test Workout", forKeyPath: "name")
+//        person.setValue(Date(), forKey: "created_date")
+//        
+//        // 4
+//        do {
+//            try managedContext.save()
+//        } catch let error as NSError {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
     }
     
     //MARK: UI Inits

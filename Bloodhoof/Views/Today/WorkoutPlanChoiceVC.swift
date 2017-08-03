@@ -18,6 +18,8 @@ class WorkoutPlanChoiceVC: UIViewController {
     
     var workoutList: [NSManagedObject]!
     
+    let todayService = TodayService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myPlansTableViewInit()
@@ -88,16 +90,9 @@ extension WorkoutPlanChoiceVC: UITableViewDelegate, UITableViewDataSource {
 //MARK: - helper functions
 extension WorkoutPlanChoiceVC {
     func fetchWorkoutDataFromCoreData() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Workout")
-        do {
-            workoutList = try managedContext.fetch(fetchRequest)
-            myPlansTableView.reloadData()
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
+        todayService.getTodayWorkoutData {
+            self.workoutList = $0
+            print(self.workoutList[0].value(forKey: "name") as? String)
         }
     }
 }

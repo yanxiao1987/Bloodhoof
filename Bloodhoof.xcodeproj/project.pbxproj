@@ -30,6 +30,7 @@
 		D3A399781F2CB76F0079F6E5 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399771F2CB76F0079F6E5 /* LoginVM.swift */; };
 		D3A3997A1F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399791F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift */; };
 		D3A3997C1F30A67B0079F6E5 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3997B1F30A67B0079F6E5 /* Workout.swift */; };
+		D3A399811F334F080079F6E5 /* TodayServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399801F334F080079F6E5 /* TodayServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		D3A399771F2CB76F0079F6E5 /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVM.swift; path = ViewModels/Login/LoginVM.swift; sourceTree = "<group>"; };
 		D3A399791F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutPlanChoiceVM.swift; path = ViewModels/Today/WorkoutPlanChoiceVM.swift; sourceTree = "<group>"; };
 		D3A3997B1F30A67B0079F6E5 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Workout.swift; path = Models/Workout.swift; sourceTree = "<group>"; };
+		D3A399801F334F080079F6E5 /* TodayServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayServices.swift; path = Services/TodayServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				D37344641EFF78BE001939A7 /* Info.plist */,
 				D373445C1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld */,
 				D3A399611F239BDC0079F6E5 /* Utilities */,
+				D3A3997F1F334E9F0079F6E5 /* Services */,
 				D3A399671F24ED540079F6E5 /* views */,
 				9277570A1F22C98400A3AF56 /* Models */,
 				D3A399661F24EB160079F6E5 /* ViewModels */,
@@ -271,6 +274,14 @@
 				D3A399771F2CB76F0079F6E5 /* LoginVM.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		D3A3997F1F334E9F0079F6E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3A399801F334F080079F6E5 /* TodayServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		ED37EE593A6C752FD7A5A6CA /* Pods */ = {
@@ -477,6 +488,7 @@
 				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
 				9277571E1F29506C00A3AF56 /* WorkoutTypeVC.swift in Sources */,
 				D3A399721F28CD2B0079F6E5 /* NewWorkoutVM.swift in Sources */,
+				D3A399811F334F080079F6E5 /* TodayServices.swift in Sources */,
 				D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */,
 				D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */,
 				D373445E1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld in Sources */,
