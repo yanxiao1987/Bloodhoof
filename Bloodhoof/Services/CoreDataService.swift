@@ -16,9 +16,23 @@ class CoreDataService {
     
     static let managedContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    static func getTodayWorkoutData() -> [Workout] {
+    static func getTodayWorkoutData() -> Workout? {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Workout")
-//        fetchRequest.predicate = NSPredicate(format: "%k >= %d", "created_date", Calendar(identifier: Calendar.Identifier.gregorian).startOfDay(for: Date()))
+        fetchRequest.predicate = NSPredicate(format: "(created_date >= %@) and (created_date < %@)", Date().startOfDay() as CVarArg, Date().endOfDay() as CVarArg)
+        do {
+            let workoutList = try managedContext.fetch(fetchRequest)
+            return workoutList.count > 0 ? (workoutList[0] as! Workout) : nil
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        return nil
+    }
+    
+    static func getMyWorkoutPlan() -> [Workout] {
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Workout")
+        let sortDescriptor = NSSortDescriptor(key: "created_date", ascending: false)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        fetchRequest.predicate = NSPredicate(format: "body_parts CONTAINS ", Date().startOfDay() as CVarArg, Date().endOfDay() as CVarArg)
         do {
             let workoutList = try managedContext.fetch(fetchRequest)
             return workoutList as! [Workout]

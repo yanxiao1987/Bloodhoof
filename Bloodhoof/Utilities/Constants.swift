@@ -95,3 +95,23 @@ extension UITextField {
         self.rightViewMode = .always
     }
 }
+
+extension Date {
+    func startOfDay() -> Date {
+        let calendar = Calendar.current
+        var components = (calendar as NSCalendar).components([.day , .month, .year], from: self)
+        components.setValue(0, for: .hour)
+        components.setValue(0, for: .minute)
+        components.setValue(0, for: .second)
+        return calendar.date(from: components)!
+    }
+    
+    func endOfDay() -> Date {
+        let calendar = Calendar.current
+        var components = (calendar as NSCalendar).components([.day , .month, .year], from: self)
+        components.setValue(23, for: .hour)
+        components.setValue(59, for: .minute)
+        components.setValue(59, for: .second)
+        return calendar.date(from: components)!
+    }
+}
