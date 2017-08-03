@@ -12,6 +12,11 @@
 		9277571C1F29075D00A3AF56 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277571B1F29075D00A3AF56 /* MainTabBarController.swift */; };
 		9277571E1F29506C00A3AF56 /* WorkoutTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277571D1F29506C00A3AF56 /* WorkoutTypeVC.swift */; };
 		927757261F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927757251F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift */; };
+		927757801F3391DA00A3AF56 /* Exercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277577C1F3391DA00A3AF56 /* Exercise+CoreDataClass.swift */; };
+		927757811F3391DA00A3AF56 /* Exercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277577D1F3391DA00A3AF56 /* Exercise+CoreDataProperties.swift */; };
+		927757821F3391DA00A3AF56 /* Workout+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277577E1F3391DA00A3AF56 /* Workout+CoreDataClass.swift */; };
+		927757831F3391DA00A3AF56 /* Workout+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9277577F1F3391DA00A3AF56 /* Workout+CoreDataProperties.swift */; };
+		927757851F33925C00A3AF56 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927757841F33925C00A3AF56 /* Body.swift */; };
 		D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34694CD1F256B8000921A7D /* DashboardVM.swift */; };
 		D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344551EFF78BE001939A7 /* AppDelegate.swift */; };
 		D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344571EFF78BE001939A7 /* DashboardVC.swift */; };
@@ -21,16 +26,13 @@
 		D37344631EFF78BE001939A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D37344611EFF78BE001939A7 /* LaunchScreen.storyboard */; };
 		D373446E1EFF78BE001939A7 /* BloodhoofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D373446D1EFF78BE001939A7 /* BloodhoofTests.swift */; };
 		D37344791EFF78BE001939A7 /* BloodhoofUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37344781EFF78BE001939A7 /* BloodhoofUITests.swift */; };
-		D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3995F1F239AEE0079F6E5 /* Exercise.swift */; };
 		D3A399631F239C010079F6E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399621F239C010079F6E5 /* Constants.swift */; };
-		D3A399651F24C0030079F6E5 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399641F24C0030079F6E5 /* Body.swift */; };
 		D3A3996A1F261F5E0079F6E5 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399691F261F5E0079F6E5 /* NewWorkoutVC.swift */; };
 		D3A399721F28CD2B0079F6E5 /* NewWorkoutVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399711F28CD2B0079F6E5 /* NewWorkoutVM.swift */; };
 		D3A399761F2CB7580079F6E5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399751F2CB7580079F6E5 /* LoginVC.swift */; };
 		D3A399781F2CB76F0079F6E5 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399771F2CB76F0079F6E5 /* LoginVM.swift */; };
 		D3A3997A1F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399791F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift */; };
-		D3A3997C1F30A67B0079F6E5 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3997B1F30A67B0079F6E5 /* Workout.swift */; };
-		D3A399811F334F080079F6E5 /* TodayServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399801F334F080079F6E5 /* TodayServices.swift */; };
+		D3A399811F334F080079F6E5 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A399801F334F080079F6E5 /* CoreDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,11 @@
 		9277571B1F29075D00A3AF56 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Views/MainTabBarController.swift; sourceTree = "<group>"; };
 		9277571D1F29506C00A3AF56 /* WorkoutTypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTypeVC.swift; path = Views/Today/WorkoutTypeVC.swift; sourceTree = "<group>"; };
 		927757251F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutPlanChoiceVC.swift; path = Views/Today/WorkoutPlanChoiceVC.swift; sourceTree = "<group>"; };
+		9277577C1F3391DA00A3AF56 /* Exercise+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Exercise+CoreDataClass.swift"; path = "Models/Exercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9277577D1F3391DA00A3AF56 /* Exercise+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Exercise+CoreDataProperties.swift"; path = "Models/Exercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9277577E1F3391DA00A3AF56 /* Workout+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataClass.swift"; path = "Models/Workout+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9277577F1F3391DA00A3AF56 /* Workout+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Workout+CoreDataProperties.swift"; path = "Models/Workout+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		927757841F33925C00A3AF56 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Body.swift; path = Models/Body.swift; sourceTree = "<group>"; };
 		B830F5E203AF09D3D6AC72B4 /* Pods-Bloodhoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bloodhoof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bloodhoof/Pods-Bloodhoof.debug.xcconfig"; sourceTree = "<group>"; };
 		D34694CD1F256B8000921A7D /* DashboardVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardVM.swift; path = ViewModels/Dashboard/DashboardVM.swift; sourceTree = "<group>"; };
 		D37344521EFF78BE001939A7 /* Bloodhoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bloodhoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,16 +80,13 @@
 		D37344741EFF78BE001939A7 /* BloodhoofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodhoofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37344781EFF78BE001939A7 /* BloodhoofUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodhoofUITests.swift; sourceTree = "<group>"; };
 		D373447A1EFF78BE001939A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3A3995F1F239AEE0079F6E5 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = Models/Exercise.swift; sourceTree = "<group>"; };
 		D3A399621F239C010079F6E5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utilities/Constants.swift; sourceTree = "<group>"; };
-		D3A399641F24C0030079F6E5 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Body.swift; path = Models/Body.swift; sourceTree = "<group>"; };
 		D3A399691F261F5E0079F6E5 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewWorkoutVC.swift; path = Views/Today/NewWorkoutVC.swift; sourceTree = "<group>"; };
 		D3A399711F28CD2B0079F6E5 /* NewWorkoutVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewWorkoutVM.swift; path = ViewModels/Today/NewWorkoutVM.swift; sourceTree = "<group>"; };
 		D3A399751F2CB7580079F6E5 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Views/Login/LoginVC.swift; sourceTree = "<group>"; };
 		D3A399771F2CB76F0079F6E5 /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVM.swift; path = ViewModels/Login/LoginVM.swift; sourceTree = "<group>"; };
 		D3A399791F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutPlanChoiceVM.swift; path = ViewModels/Today/WorkoutPlanChoiceVM.swift; sourceTree = "<group>"; };
-		D3A3997B1F30A67B0079F6E5 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Workout.swift; path = Models/Workout.swift; sourceTree = "<group>"; };
-		D3A399801F334F080079F6E5 /* TodayServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayServices.swift; path = Services/TodayServices.swift; sourceTree = "<group>"; };
+		D3A399801F334F080079F6E5 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataService.swift; path = Services/CoreDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +134,11 @@
 		9277570A1F22C98400A3AF56 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D3A399641F24C0030079F6E5 /* Body.swift */,
-				D3A3995F1F239AEE0079F6E5 /* Exercise.swift */,
-				D3A3997B1F30A67B0079F6E5 /* Workout.swift */,
+				9277577C1F3391DA00A3AF56 /* Exercise+CoreDataClass.swift */,
+				9277577D1F3391DA00A3AF56 /* Exercise+CoreDataProperties.swift */,
+				9277577E1F3391DA00A3AF56 /* Workout+CoreDataClass.swift */,
+				9277577F1F3391DA00A3AF56 /* Workout+CoreDataProperties.swift */,
+				927757841F33925C00A3AF56 /* Body.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -279,7 +285,7 @@
 		D3A3997F1F334E9F0079F6E5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D3A399801F334F080079F6E5 /* TodayServices.swift */,
+				D3A399801F334F080079F6E5 /* CoreDataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -479,24 +485,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A399601F239AEE0079F6E5 /* Exercise.swift in Sources */,
 				D3A3996A1F261F5E0079F6E5 /* NewWorkoutVC.swift in Sources */,
 				927757261F2BB2C100A3AF56 /* WorkoutPlanChoiceVC.swift in Sources */,
 				9277571A1F280D5A00A3AF56 /* ProfileMainVC.swift in Sources */,
 				D3A399781F2CB76F0079F6E5 /* LoginVM.swift in Sources */,
-				D3A3997C1F30A67B0079F6E5 /* Workout.swift in Sources */,
-				D3A399651F24C0030079F6E5 /* Body.swift in Sources */,
+				927757821F3391DA00A3AF56 /* Workout+CoreDataClass.swift in Sources */,
+				927757831F3391DA00A3AF56 /* Workout+CoreDataProperties.swift in Sources */,
 				9277571E1F29506C00A3AF56 /* WorkoutTypeVC.swift in Sources */,
 				D3A399721F28CD2B0079F6E5 /* NewWorkoutVM.swift in Sources */,
-				D3A399811F334F080079F6E5 /* TodayServices.swift in Sources */,
+				D3A399811F334F080079F6E5 /* CoreDataService.swift in Sources */,
 				D37344581EFF78BE001939A7 /* DashboardVC.swift in Sources */,
+				927757801F3391DA00A3AF56 /* Exercise+CoreDataClass.swift in Sources */,
 				D37344561EFF78BE001939A7 /* AppDelegate.swift in Sources */,
 				D373445E1EFF78BE001939A7 /* Bloodhoof.xcdatamodeld in Sources */,
 				D3A399631F239C010079F6E5 /* Constants.swift in Sources */,
 				D34694CE1F256B8000921A7D /* DashboardVM.swift in Sources */,
 				D3A3997A1F2F68430079F6E5 /* WorkoutPlanChoiceVM.swift in Sources */,
+				927757811F3391DA00A3AF56 /* Exercise+CoreDataProperties.swift in Sources */,
 				9277571C1F29075D00A3AF56 /* MainTabBarController.swift in Sources */,
 				D3A399761F2CB7580079F6E5 /* LoginVC.swift in Sources */,
+				927757851F33925C00A3AF56 /* Body.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

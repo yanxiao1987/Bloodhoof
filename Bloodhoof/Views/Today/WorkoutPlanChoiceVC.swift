@@ -16,9 +16,7 @@ class WorkoutPlanChoiceVC: UIViewController {
     
     var templatePlanButton: UIButton!
     
-    var workoutList: [NSManagedObject]!
-    
-    let todayService = TodayService()
+    var workoutList: [Workout] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,13 +74,13 @@ extension WorkoutPlanChoiceVC {
 //MARK: - UITableViewDelegate, UITableViewDataSource
 extension WorkoutPlanChoiceVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return workoutList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MyPlansTableViewCell.identifier, for: indexPath) as! MyPlansTableViewCell
         cell.selectionStyle = .none
-        cell.nameLabel.text = workoutList[indexPath.row].value(forKeyPath: "name") as? String
+        cell.nameLabel.text = workoutList[indexPath.row].name
         return cell
     }
 }
@@ -90,10 +88,8 @@ extension WorkoutPlanChoiceVC: UITableViewDelegate, UITableViewDataSource {
 //MARK: - helper functions
 extension WorkoutPlanChoiceVC {
     func fetchWorkoutDataFromCoreData() {
-        todayService.getTodayWorkoutData {
-            self.workoutList = $0
-            print(self.workoutList[0].value(forKey: "name") as? String)
-        }
+        workoutList = CoreDataService.getTodayWorkoutData()
+        myPlansTableView.reloadData()
     }
 }
 
