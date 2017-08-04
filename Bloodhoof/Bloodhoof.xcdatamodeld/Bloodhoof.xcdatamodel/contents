@@ -14,7 +14,7 @@
         <relationship name="exercise" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workout" inverseEntity="Exercise" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Exercise" positionX="-180" positionY="84" width="128" height="105"/>
+        <element name="Exercise" positionX="-180" positionY="84" width="128" height="103"/>
         <element name="Workout" positionX="-18" positionY="54" width="128" height="120"/>
     </elements>
 </model>

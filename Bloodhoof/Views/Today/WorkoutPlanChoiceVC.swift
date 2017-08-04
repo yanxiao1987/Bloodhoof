@@ -47,6 +47,7 @@ extension WorkoutPlanChoiceVC {
         addNewPlanButton = UIButton()
         addNewPlanButton.setTitle(NSLocalizedString("Add a new plan", comment: ""), for: .normal)
         addNewPlanButton.setTitleColor(Constants.Colors.darkGray, for: .normal)
+        addNewPlanButton.addTarget(self, action: #selector(self.createNewButtonClicked), for: UIControlEvents.touchUpInside)
         addNewPlanButton.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(addNewPlanButton)
         
@@ -82,6 +83,13 @@ extension WorkoutPlanChoiceVC: UITableViewDelegate, UITableViewDataSource {
         cell.selectionStyle = .none
         cell.nameLabel.text = workoutList[indexPath.row].name
         return cell
+    }
+}
+
+//MARK: - Button actions
+extension WorkoutPlanChoiceVC {
+    func createNewButtonClicked() {
+        self.performSegue(withIdentifier: "createNewWorkoutSegue", sender: nil)
     }
 }
 

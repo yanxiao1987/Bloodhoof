@@ -127,7 +127,6 @@ extension LoginVC {
             })
             .disposed(by: disposeBag)
     }
-    
 }
 
 //MARK: - User Interaction
