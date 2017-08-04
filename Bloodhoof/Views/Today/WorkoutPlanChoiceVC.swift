@@ -87,6 +87,7 @@ extension WorkoutPlanChoiceVC: UITableViewDelegate, UITableViewDataSource {
 
 //MARK: - helper functions
 extension WorkoutPlanChoiceVC {
+    //TO DO: move to presenter later
     func fetchWorkoutDataFromCoreData() {
         workoutList = CoreDataService.getMyWorkoutPlan()
         myPlansTableView.reloadData()
